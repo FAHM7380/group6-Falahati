@@ -349,6 +349,8 @@ Finally, the ***default function*** is used to calculate the building charge, wh
 
 Finally, we can call all division functions using the following function and output them.And save as a csv file.
 
+### *execute all division funcs*
+
     def execute_all_division_funcs(root_in: str, root_out: str, root_info: str):
     
       import pandas as pd 
