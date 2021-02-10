@@ -302,6 +302,18 @@ def default(root_in: str, root_out: str, root_info: str):
     
     return  
 
+def execute_all_division_funcs(root_in: str, root_out: str, root_info: str):
+    
+    import pandas as pd 
+    
+    equal(root_in, root_out)
+    number(root_in, root_out, root_info)
+    area(root_in, root_out, root_info)
+    parking(root_in, root_out, root_info)
+    a = pd.read_csv(root_out, names =   ['unit','amount','time','category','subcategory','cost for each unit'])
+    a.to_csv(root_out, mode = 'w')
+    
+    return
 
 ############# report functions
 
@@ -624,25 +636,3 @@ def next_year_expenditure_estimation(root_in: str, root_info: str):
     unit_next_year_monthly_payment = next_year_expenditure_projection // (12 * len(resident_info['number']))
     
     return unit_next_year_monthly_payment 
-
-def execute_all_division_funcs(root_in: str, root_out: str, root_info: str):
-    
-    equal(root_in, root_out)
-    number(root_in, root_out, root_info)
-    area(root_in, root_out, root_info)
-    parking(root_in, root_out, root_info)
-    
-    return
-
-
-
-
-
-
-
-
-
-
-
-
-
