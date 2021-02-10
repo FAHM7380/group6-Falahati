@@ -14,6 +14,7 @@
      3. [area](#area)
      4. [parking](#parking)
      5. [default](#default)
+     6. [execute all division funcs](#execute-all-division-funcs)
   4. [Report Function](#report-function)
      1. [balance](#balance)
      2. [transaction histoy](#transaction-histoy)
