@@ -346,6 +346,21 @@ Finally, the ***default function*** is used to calculate the building charge, wh
     
       return
 
+Finally, we can call all division functions using the following function and output them.And save as a csv file.
+
+    def execute_all_division_funcs(root_in: str, root_out: str, root_info: str):
+    
+      import pandas as pd 
+    
+      equal(root_in, root_out)
+      number(root_in, root_out, root_info)
+      area(root_in, root_out, root_info)
+      parking(root_in, root_out, root_info)
+      a = pd.read_csv(root_out, names =   ['unit','amount','time','category','subcategory','cost for each unit'])
+      a.to_csv(root_out, mode = 'w')
+    
+      return
+      
  **[⬆ back to top](#table-of-contents)**
  
 ## **Report Function**
