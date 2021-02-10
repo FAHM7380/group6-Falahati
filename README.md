@@ -41,7 +41,7 @@ The append function is the part where the building manager must give the informa
     
       import pandas as pd
       import datetime as dt
-      d = {'amount': [], 'date':[], 'category': [] , 'subcategory': [],
+      d = {'amount': [], 'time':[], 'category': [] , 'subcategory': [],
      'responsible unit': [], 'related unit': [[]],
      'div': [], 'description': []}
      
@@ -50,7 +50,7 @@ These dictionary keys include the amount or the same cost, the time of the trans
     amount = int(input('amount:'))
     d['amount'].append(amount)
     
-    time = input('date( Example: 1399/09/21 ) : ')
+    time = input('time( Example: 1399/09/21 ) : ')
     d['time'].append(dt.date(int(time[0:4]),int(time[5:7]), int(time[8:])))
     
 In the category section and the rest of the input sections, we acted as a few options so that the building manager could easily do the building work and spend less time typing. 
