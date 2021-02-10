@@ -14,7 +14,6 @@
      3. [area](#area)
      4. [parking](#parking)
      5. [default](#default)
-     6. [execute all division funcs](#execute-all-division-funcs)
   4. [Report Function](#report-function)
      1. [balance](#balance)
      2. [transaction histoy](#transaction-histoy)
@@ -133,6 +132,8 @@ At the end of the input, after receiving this information from the building mana
 Division functions are a group of functions that divide the price between units based on the inputs of the building manager in the previous section, as stated in the functions. This group of functions includes 5 ***equal, number, area, parking and default functions***, of which the 3 functions ***number***, ***area***, ***parking*** have almost the same algorithm, except that they are calculated based on the area of the units or the number of parking spaces or the number of people.
 The ***equal function*** also divides a cost equally between units, which is the most common method of calculation in buildings.
 Finally, the ***default function*** is used to calculate the building charge, which is always a constant value and is evenly divided between the units.
+
+at the end, we can execute all division functions using only one function.
 
 ### *equal*
 
@@ -345,21 +346,6 @@ Finally, the ***default function*** is used to calculate the building charge, wh
     
       user_input_df.to_csv(root_out, mode = 'a', header = False, index = False)   
     
-      return
-
-### *execute all division funcs*
-
-Finally, we can execute all division functions using only one function.
-
-    def execute_all_division_funcs(root_in: str, root_out: str, root_info: str):
-    
-      import pandas as pd 
-    
-      equal(root_in, root_out)
-      number(root_in, root_out, root_info)
-      area(root_in, root_out, root_info)
-      parking(root_in, root_out, root_info)
-      
       return
       
  **[⬆ back to top](#table-of-contents)**
@@ -751,11 +737,12 @@ The last but not least is the ***next_year_expenditure_estimation function*** wh
       unit_next_year_monthly_payment = next_year_expenditure_projection // (12 * len(resident_info['number']))
     
       return unit_next_year_monthly_payment
+      
 **Observation sample-next year expenditure estimation:**
 
 ![alt text](https://github.com/FAHM7380/group6-Falahati/blob/main/Final%20Project/photo_2021-02-10_09-14-13.jpg?raw=true)
 
-Using data3 and data1 that put in Data exc, the estimated monthly payment next year for each unit is about 401 thousand tomans.
+Using Data1.xlsx and Data3.xlsx in Data Exc folder, next year's monthly payment for each unit is estimated about about 401 thousand tomans.
  
  **[⬆ back to top](#table-of-contents)**
 
