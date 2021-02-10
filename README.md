@@ -759,7 +759,7 @@ The report writing and presentation of the project in Git hub was done by **[Moh
 At first the group focused on accepting inputs from user and came to the conclusion that the program must accept inputs using while and if loops.
 One challenge was in the expense’s division functions. We didn’t have an idea how to divide the expenses between related units, and another problem was that we didn’t know how to put the distributed costs in a new database, which was solved by asking the project guide and searching.
 Although the report functions had a lot of syntax, we were able to successfully overcome this challenge due to previous familiarity.
-One of our biggest challenges was that at first our functions were performed on all units, but later we realized that some costs may not apply to some units. Unfortunately, we did not find a solution to solve this problem, so the group decided to enter the desired units manually, which of course is mentioned in the points where there is room for improvement.
+One of our biggest challenges was that at first our functions were performed on all units and next year expenditure estimation, but later we realized that some costs may not apply to some units. Unfortunately, we did not find a solution to solve this problem, so the group decided to enter the desired units manually, which of course is mentioned in the points where there is room for improvement.
 Some challenges were minor were solved by searching the internet and collaborating with members.
 
 ### Creative ideas and extra works:
