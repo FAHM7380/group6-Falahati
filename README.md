@@ -441,7 +441,12 @@ The last but not least is the ***next_year_expenditure_estimation function*** wh
       plt.show()
 
       return shares,'A plot has been drawn in the plots pane.Please check it'
- 
+      
+***Observation sample-portion by category dataframe :***
+![alt text](https://github.com/FAHM7380/group6-Falahati/blob/main/Final%20Project/Observation%20sample-portion%20by%20category%20dataframe.png?raw=true)
+
+***Observation sample-portion by category pie :***
+![alt text](https://github.com/FAHM7380/group6-Falahati/blob/main/Final%20Project/Observation%20sample-portion%20by%20category%20pie.png?raw=true)
  
  ### *portion by subcategory*
  
@@ -466,7 +471,13 @@ The last but not least is the ***next_year_expenditure_estimation function*** wh
       plt.show()
       
       return shares,'A plot has been drawn in the plots pane.Please check it'
- 
+
+***Observation sample-portion by subcategory dataframe :***
+![alt text](https://github.com/FAHM7380/group6-Falahati/blob/main/Final%20Project/Observation%20sample-portion%20by%20subcategory%20dataframe.png?raw=true)
+
+***Observation sample-portion by subcategory pie :***
+![alt text](https://github.com/FAHM7380/group6-Falahati/blob/main/Final%20Project/Observation%20sample-portion%20by%20subcategory%20pie.png?raw=true)
+
  ### *portion by unit*
  
     def portion_by_unit(root_in: str):
@@ -490,6 +501,12 @@ The last but not least is the ***next_year_expenditure_estimation function*** wh
     
       return shares,'A plot has been drawn in the plots pane. Please chack it.'
  
+***Observation sample-portion by unit dataframe :***
+![alt text](https://github.com/FAHM7380/group6-Falahati/blob/main/Final%20Project/Observation%20sample-portion%20by%20unit%20dataframe.png?raw=true) 
+ 
+***Observation sample-portion by unit pie :*** 
+![alt text](https://github.com/FAHM7380/group6-Falahati/blob/main/Final%20Project/Observation%20sample-portion%20by%20unit%20pie.png?raw=true)
+
  ### *negative balance error*
  
     def negative_balance_error(root_in: str):  
